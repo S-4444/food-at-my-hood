@@ -19,7 +19,7 @@ public class ListMenuItemsService {
 	  
 	  public List<ListMenuItems> list() {
 	        LOGGER.info("Start");
-	        return listMenuItemsRepository;
+	        return listMenuItemsRepository.findAll();
 	    }
 
 }
