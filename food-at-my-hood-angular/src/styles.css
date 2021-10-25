@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@media screen and (max-width:600px){
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+         
+    }
+    
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+     
+}
+.text-center
+{
+    text-decoration: dashed;
+} 
