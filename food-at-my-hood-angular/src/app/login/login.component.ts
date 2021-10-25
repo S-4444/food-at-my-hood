@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from '../service/auth.service';
 import { CustomerService } from '../service/customer.service';
 
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
   password : string = "";
   success : boolean = false;
   error : boolean = false;
-  constructor(private customerService:CustomerService,private authService:AuthService) { }
+  constructor(private customerService:CustomerService,private authService:AuthService,private router:Router) { }
 
   login(){
     
@@ -22,6 +23,7 @@ export class LoginComponent implements OnInit {
         this.error = false;
         this.success = true;
         this.authService.setCustomer(customer);
+        this.router.navigateByUrl("/menu");
       },
       error => {
         if(error.status == 401){
