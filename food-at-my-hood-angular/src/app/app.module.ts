@@ -3,26 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListOfMenuItemsComponent } from './list-of-menu-items/list-of-menu-items.component';
-// import { ShowAllComponent } from './show-all/show-all.component';
-// import { BreakfastComponent } from './breakfast/breakfast.component';
-// import { LunchComponent } from './lunch/lunch.component';
-// import { DinnerComponent } from './dinner/dinner.component';
-import { FooditemimgComponent } from './fooditemimg/fooditemimg.component';
+import { CartItemComponent } from './cart-item/cart-item.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { HomeComponent } from './home/home.component';
+import { MenuComponent } from './menu/menu.component';
+import { NavberComponent } from './navber/navber.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListOfMenuItemsComponent,
-    // ShowAllComponent,
-    // BreakfastComponent,
-    // LunchComponent,
-    // DinnerComponent,
-    FooditemimgComponent
+    CartItemComponent,
+    LoginComponent,
+    SignupComponent,
+    HomeComponent,
+    MenuComponent,
+    NavberComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

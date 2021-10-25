@@ -1,0 +1,17 @@
+<section class="breakfast">
+    <!-- <img src="../../assets/breakfast.jfif" > -->
+    <div class="text-center"><br>
+        <h2>Menu Items</h2>
+    </div>
+    <div > 
+    <div class ="menu-wrapper" *ngFor="let item of menuItems" >
+       <div class="breakfast menu-restaurant" style="padding: 2%;border: 1px solid grey;border-radius: 5px; margin: 2%;margin-left: 5%;margin-right: 5%; "> 
+        <span  style="float: right;"><img src={{item.url}} height="150px"width="150px"></span>
+        <span class="menu-title" >{{item.name}}</span>  <br><br> 
+        <!-- <span style="display: block; margin-right: 10px;"> {{.aboutItem}}</span> <br> -->
+        <span class="menu-price" style="display: block;"></span>Rs.{{item.price}}  <br><br>
+        <button class="btn btn-outline-success" style="border: 1px orange;background-color: orange;border-radius: 2px; ">Add Item to Cart</button>
+       </div>
+    </div>
+    </div>    
+</section>
