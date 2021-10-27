@@ -1,1 +1,12 @@
-<p>{{cartItem.menuName}}</p>
+<h1>Cart</h1>
+<div class="container">
+    <table class="table">
+        <tr *ngFor="let cartItem of cartItems">
+            <td>{{cartItem.menuItem.name}}</td>
+            <td>{{cartItem.menuItem.price}}</td>
+            <td>{{cartItem.quantity}}</td>
+            <td>{{cartItem.menuItem.price * cartItem.quantity}}</td>
+        </tr>
+    </table>
+    <h3>Total : {{total}}</h3>
+</div>

@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+<<<<<<< HEAD
 @media screen and (max-width:600px){
 
     body{
@@ -19,3 +20,8 @@ body{
 {
     text-decoration: dashed;
 } 
+=======
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+>>>>>>> bb16f804210aaa0828d35aa2aef840204cf58bf9
