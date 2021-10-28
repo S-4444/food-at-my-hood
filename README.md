@@ -1,4 +1,4 @@
-# food-at-my-hood
+# Food at my Hood
 
 ## DESCRIPTION
 Food delivery web application for a restaurant. This website will list the menu items, the customer can add items to the cart and place the order.
