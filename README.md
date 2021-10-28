@@ -13,7 +13,7 @@ Food delivery web application for a restaurant. This website will list the menu 
 * MySQL
 * Spring Framework
 * Spring AOP 
-* 
+
 ### Features
 * As a user, one can login.
 * As a user, one can register with the bank using First Name, Last Name, Email and Password.
